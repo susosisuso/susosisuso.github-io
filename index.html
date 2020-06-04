@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>나만의 홈페이지</title>
+
+    <style>
+        div.background {
+            background: url(배너.jpg) no-repeat;
+            border: 1px solid black;
+        }
+        div.box {
+            margin: 20px;
+            background-color: #ffffff;
+            border: 1px solid purple;
+            opacity: 0.5;            
+        }
+        div.box p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+            font-size: 30px;
+        }
+        a { text-decoration: none; color: white; }
+        div.menu {
+            left: 0px; width: 80px; height: 50px;
+            background: #9e37d1;
+            border: 1px solid purple;
+            transition-property: width background;
+            transition-duration: 2s; 2s;
+            line-height: 50px;
+        }
+        div.menu:hover {
+            width: 200px;
+            transition-timing-function: linear;
+            background: purple;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+<script>
+    function showPopup()
+    {
+    window.open ("123.jpg", "a", "width=400,height=300,scrollbars=no,toolbar=no,top=50,left=100,noresize");
+    
+    }
+    </script>
+    
+    </head>
+    
+<body onLoad="javascript:showPopup();">
+
+    <div class="background">
+        <div class="box">
+           <p>나만의 홈페이지 만들기</p> 
+           <p>웹프로그래밍 텀 프로젝트</p>
+        </div>
+    </div>
+
+    <div class="menu" style="top: 50px"><a href="소개.html" target="if_a">소개</a></div>
+    <div class="menu" style="top: 50px"><a href="일대기.html" target="if_a">일대기</a></div>
+    <div class="menu" style="top: 50px"><a href="목표.html" target="if_a">목표</a></div>
+    <div class="menu" style="top: 50px"><a href="제작과정.html" target="if_a">제작과정</a></div>
+    <div class="menu" style="top: 50px"><a href="마침글.html" target="if_a">마침글</a></div>
+
+    <center>
+        <iframe width="1000" height="1000" name="if_a" frameborder="0"></iframe>
+    </center>
+
+    <input="button" value="팝업팡 호출"></input>
+</body>
+</html>
